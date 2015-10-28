@@ -65,7 +65,7 @@ Markup to be used for the entire slider (including the pager).
 <pre class="highlight html"><code>default: '<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sy-box"</span> <span class="nt">/&gt;</span>'
 accepts: Any valid HTML element (almost) can be used, but we recommend <span class="nt">&lt;div&gt;</span>, <span class="nt">&lt;section&gt;</span>.
 </code></pre>
-     
+
 <h4 id="slideWrapper">slideWrapper</h4>
 
 Markup to be used to wrap the slides and controls (think of it as the viewport)
@@ -113,7 +113,7 @@ The class for the element that acts as an intrinsic placeholder (basically the e
 <pre class="highlight html"><code>default: 'sy-filler'
 accepts: Any string that is valid as a class in CSS.
 </code></pre>
-    
+
 <h4 id="loadingClass">loadingClass</h4>
 
 The class applied to `slippry_wrapper` while Slippry slider is being loaded.
@@ -277,7 +277,7 @@ Transition type to use, or no transitions.
 <pre class="highlight html"><code>default: 'fade'
 accepts: 'fade', 'horizontal', 'vertical', 'kenburns', false
 </code></pre>
-    
+
 <h4 id="kenZoom">kenZoom</h4>
 
 Max zoom level use for the Ken Burns transition.
@@ -285,7 +285,7 @@ Max zoom level use for the Ken Burns transition.
 <pre class="highlight html"><code>default: 120
 accepts: any percentage value.
 </code></pre>
-    
+
 <h4 id="slideMargin">slideMargin</h4>
 
 The spacing between slides.
@@ -293,7 +293,7 @@ The spacing between slides.
 <pre class="highlight html"><code>default: 0
 accepts: any value as a percentage of the slippry_box (viewport).
 </code></pre>
-    
+
 <h4 id="transClass">transClass</h4>
 
 The class applied to the slide element when a transition is in progress.
@@ -301,15 +301,15 @@ The class applied to the slide element when a transition is in progress.
 <pre class="highlight html"><code>default: 'transition'
 accepts: Any string that is valid as a class in CSS.
 </code></pre>
-  
+
 <h4 id="speed">speed</h4>
 
 The time the transition takes to complete.
 
-<pre class="highlight html"><code>default: 800 
+<pre class="highlight html"><code>default: 800
 accepts: any number (in milliseconds).
 </code></pre>
-    
+
 <h4 id="easing">easing</h4>
 
 The easing effect to use for the selected transition.
@@ -317,7 +317,7 @@ The easing effect to use for the selected transition.
 <pre class="highlight html"><code>default: 'swing'
 accepts: any easing effect. See "http://jqueryui.com/resources/demos/effect/easing.html".
 </code></pre>
-    
+
 <h4 id="continuous">continuous</h4>
 
 Whether the slider should run continuously (seamless transition between the first and last slides).
@@ -330,7 +330,7 @@ accepts: true, false
 
 Whether the slider should use CSS transitions. If the user's browser doesn't support CSS transitions the slider will fallback to jQuery.
 
-<pre class="highlight html"><code>default: false
+<pre class="highlight html"><code>default: true
 accepts: true, false
 </code></pre>
 
@@ -393,7 +393,7 @@ Runs when the slider has loaded.
 },
 accepts: any valid function.
 </code></pre>
-    
+
 <h4 id="onSlideBefore">onSlideBefore</h4>
 
 Runs before the slide transition starts.
@@ -403,7 +403,7 @@ Runs before the slide transition starts.
 },
 accepts: any valid function.
 </code></pre>
-    
+
 <h4 id="onSlideAfter">onSlideAfter</h4>
 
 Runs after the slide transition has completed.
@@ -457,6 +457,7 @@ Destroys the Slippry slider and initialises it again.
 <pre class="highlight javascript"><code><span class="nx">el</span><span class="p">.</span><span class="nx">reloadSlider</span><span class="p">();</span>
 </code></pre>
 </section>
+
     <footer id="footer" class="full-width">
   <div class="footer-content restricted-width">
     <div class="githubs">
